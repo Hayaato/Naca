@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System - Earth</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #000;         }
+        #solar-system {
+            width: 50%;
+            background-color: black;         }
+        #info-panel {
+            width: 40%;             padding: 30px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            background-color: #142850;             border-radius: 25px;             margin: 20px auto;             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);         }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff;
+        }
+        a {
+            color: #007bff;             text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="solar-system"></div>
+    <div id="info-panel">
+        <h1>Moon</h1>
+        <p>The Moon is Earth's only natural satellite and the fifth-largest moon in the solar system. It is about 1/6th the size of Earth and has a surface covered with craters, plains, and mountains.</p>
+        <p>The Moon's surface is primarily composed of rock and dust, giving it a grayish appearance. Its lack of atmosphere means extreme temperature fluctuations, and its surface features remain largely unchanged over millions of years.</p>
+        <p>The Moon plays a crucial role in stabilizing Earth's tilt, which influences the planet's climate, and is responsible for ocean tides due to its gravitational pull.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="moon.js"></script>
+</body>
+</html>
